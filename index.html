@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Secure Meeting Portal</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; background-color: #f4f4f4; }
+    .container { max-width: 600px; margin: auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    label { display: block; margin-top: 15px; font-weight: bold; }
+    input, select { width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ccc; border-radius: 4px; }
+    button { margin-top: 20px; padding: 12px 20px; background-color: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; }
+    button:hover { background-color: #0056b3; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Secure Meeting Portal</h2>
+    <p>Please verify your details to begin your session:</p>
+
+    <form id="meetingForm">
+      <label for="fullName">Name</label>
+      <input type="text" name="fullName" autocomplete="name" placeholder="John Doe">
+
+      <label for="email">Email</label>
+      <input type="email" name="email" autocomplete="email" placeholder="john@example.com">
+
+      <label for="company">Company</label>
+      <input type="text" name="company" autocomplete="organization" placeholder="Acme Corp">
+
+      <label for="meetingCode">Meeting Code</label>
+      <input type="text" name="meetingCode" placeholder="e.g. 123-456-789">
+
+      <label for="role">Your Role</label>
+      <select name="role">
+        <option value="">Select your role</option>
+        <option value="attendee">Attendee</option>
+        <option value="host">Host</option>
+        <option value="admin">Admin</option>
+      </select>
+
+      <button type="submit">Join Meeting</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
