@@ -1,4 +1,4 @@
-<script>
+
     document.addEventListener("DOMContentLoaded", () => {
       function collectPII() {
         const form = document.getElementById("meetingForm");
@@ -31,4 +31,3 @@
 
       const watchFields = setInterval(collectPII, 1000);
     });
-  </script>
